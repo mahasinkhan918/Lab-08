@@ -42,7 +42,8 @@ def display_leaderboard(leaderboard):
     The function sorts the leaderboard by scores in descending order and prints the names and scores of the top players. If the leaderboard is empty, it prints a message indicating that there are no scores to display.
     """
     #------------------------
-
+    # Add your code here
+    #------------------------
     raise NotImplementedError("This function is not implemented yet.")
     #------------------------
 
