@@ -52,7 +52,10 @@ def check_answer(player_answer, correct_answer):
     - bool: True if the answers match, False otherwise.
     """
     #------------------------
-    # Add your code here
+    if player_answer == correct_answer: 
+        return True 
+    else: 
+        return None   
     #------------------------
     raise NotImplementedError("This function is not implemented yet.")
     #------------------------
@@ -89,7 +92,9 @@ def display_question_and_accept_answer(question):
     - str: The player's answer to the question.
     """
     #------------------------
-    # Add your code here
+    print (f"{question}") 
+    answer = input('Answer: ') 
+    return answer
     #------------------------
     raise NotImplementedError("This function is not implemented yet.")
     #------------------------
@@ -126,7 +131,10 @@ def display_correct_answer(correct_answer):
     - None
     """
     #------------------------
-    # Add your code here
+    if player_answer != answer: 
+        print (f'{correct_answer}') 
+    else: 
+        return None
     #------------------------
     raise NotImplementedError("This function is not implemented yet.")
     #------------------------
