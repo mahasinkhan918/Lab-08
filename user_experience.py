@@ -16,16 +16,7 @@
 #     """
 #     #------------------------
 #     # 
-#     dif = ["easy", "medium", "hard"]
-    
-#     while True:
-#         x = input()
-#         if x in dif:
-#             return x
-#         else:
-#             print("invalid function")
-# y = choose_difficulty()
-# print(y)
+
 #     #------------------------
 #     raise NotImplementedError("This function is not implemented yet.")
 
