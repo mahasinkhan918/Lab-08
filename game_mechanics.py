@@ -1,4 +1,3 @@
-
 #---------------------------------------
 #  Game Mechanics
 #    Student A (team lead)
@@ -12,7 +11,7 @@ def welcome_message():
     Returns: None
     """
     #------------------------
-    # Add your code here
+    print ("welcome to Trevia Trek")
     #------------------------
     raise NotImplementedError("This function is not implemented yet.")
     #------------------------
@@ -29,7 +28,9 @@ def choose_category(categories):
     - str: The chosen category.
     """
     #------------------------
-    # Add your code here
+    categories = [Science,History,Geography,Math,English]
+    choose = int(input('Enter catagory'))
+    return categories[choose]
     #------------------------
     raise NotImplementedError("This function is not implemented yet.")
     #------------------------
@@ -47,7 +48,8 @@ def display_score(score, round_number):
     Returns: None
     """
     #------------------------
-    # Add your code here
+    print [f"Your current score is {score}"] 
+    print [f"Your current round number is {round_number}"]
     #------------------------
     raise NotImplementedError("This function is not implemented yet.")
     #------------------------
@@ -64,7 +66,8 @@ def game_over_message(final_score):
     Returns: None
     """
     #------------------------
-    # Add your code here
+    print (f"Game over !!! ") 
+    print (f"Your final score is {final_score}")
     #------------------------
     raise NotImplementedError("This function is not implemented yet.")
     #------------------------
@@ -81,7 +84,8 @@ def run_game_rounds(categories):
     Returns: None
     """
     #------------------------
-    # Add your code here
+    for i in categories: 
+        print (i)
     #------------------------
     raise NotImplementedError("This function is not implemented yet.")
     #------------------------
@@ -100,7 +104,10 @@ def validate_answer(player_answer, correct_answer):
     - bool: True if the player's answer is correct, False otherwise.
     """
     #------------------------
-    # Add your code here
+    if player_answer == correct_answer:
+        return True  
+    else: 
+        return False
     #------------------------
     raise NotImplementedError("This function is not implemented yet.")
     #------------------------
@@ -119,7 +126,9 @@ def update_score(score, correct):
     - int: The updated score.
     """
     #------------------------
-    # Add your code here
+    while correct == True: 
+        score += 1 
+    return score
     #------------------------
     raise NotImplementedError("This function is not implemented yet.")
     #------------------------
@@ -136,8 +145,9 @@ def next_round(round_number):
     Returns:
     - int: The next round number.
     """
-    #------------------------
-    # Add your code here
+    #------------------------ 
+    new_round = round_number + 1
+    Print (f"its {new_round}th round number ")
     #------------------------
     raise NotImplementedError("This function is not implemented yet.")
     #------------------------
@@ -155,7 +165,11 @@ def check_game_over(incorrect_answers):
     - bool: True if the game should be over, False otherwise.
     """
     #------------------------
-    # Add your code here
+    if incorrect_answers == 3:  
+        return True
+        print ('Game over') 
+    else: 
+        return False  
     #------------------------
     raise NotImplementedError("This function is not implemented yet.")
     #------------------------
@@ -169,10 +183,23 @@ def restart_or_exit():
     Parameters: None
     Returns: None
     """
-    #------------------------
-    # Add your code here
+    #------------------------ 
+    restart = input('Do you want to exit or restart? ') 
+    if restart == 'exit': 
+        break 
+    else: 
+         return welcome_message()   
     #------------------------
     raise NotImplementedError("This function is not implemented yet.")
     #------------------------
 
 #---------------------------------------
+
+
+
+   
+
+   
+   
+    
+
