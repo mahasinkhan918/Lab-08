@@ -42,9 +42,23 @@ def display_leaderboard(leaderboard):
     The function sorts the leaderboard by scores in descending order and prints the names and scores of the top players. If the leaderboard is empty, it prints a message indicating that there are no scores to display.
     """
     #------------------------
-    # Add your code here
+    if not leaderboard:
+        return None
+    
+    sorted_lb = sorted(leaderboard.items(), key = lambda i:i[1], reverse = True)
+    
+    print("Leaderbord:")
+    for keys, values in sorted_lb:
+        print(f"{keys} : {values}")
+
+leaderboard_data = {
+    "Ahmad":150,
+    "Bilal":300,
+    "Ali"  :250
+}
+display_leaderboard(leaderboard_data)
     #------------------------
-    raise NotImplementedError("This function is not implemented yet.")
+#    raise NotImplementedError("This function is not implemented yet.")
     #------------------------
 
 #---------------------------------------
@@ -100,9 +114,12 @@ def provide_feedback(is_correct):
     - is it incorrect? "Sorry, that's incorrect."
     """
     #------------------------
-    # Add your code here
+    if is_correct:
+        print("Well done!")
+    else:
+        print("Sorry, that's incorrect.")
     #------------------------
-    raise NotImplementedError("This function is not implemented yet.")
+#    raise NotImplementedError("This function is not implemented yet.")
     #------------------------
 
 #---------------------------------------
