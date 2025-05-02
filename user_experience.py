@@ -15,7 +15,16 @@ def choose_difficulty():
      - str: Valid difficulty levels are ('easy', 'medium', 'hard').
      """
      #------------------------
-
+     dif = ["easy", "medium", "hard"]
+     print(f"valid difficulty levels are {dif}")
+     while True:
+          x = input()
+          if x in dif:
+               return (f"your selected difficulty level is {x}")
+          else:
+              print("invalid function")
+y = choose_difficulty()
+print(y)
      #------------------------
 #     raise NotImplementedError("This function is not implemented yet.")
 
