@@ -6,18 +6,17 @@
 
 #---------------------------------------
 
-# def choose_difficulty():
-#     """
-#     Allows players to choose the difficulty level of the questionsThe user is going to input their choice.
+def choose_difficulty():
+     """
+     Allows players to choose the difficulty level of the questionsThe user is going to input their choice.
 
-#     Parameters: None
-#     Returns:
-#     - str: Valid difficulty levels are ('easy', 'medium', 'hard').
-#     """
-#     #------------------------
-#     # 
+     Parameters: None
+     Returns:
+     - str: Valid difficulty levels are ('easy', 'medium', 'hard').
+     """
+     #------------------------
 
-#     #------------------------
+     #------------------------
 #     raise NotImplementedError("This function is not implemented yet.")
 
 #---------------------------------------
